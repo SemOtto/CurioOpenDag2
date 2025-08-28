@@ -1,0 +1,34 @@
+.LogoCurio {
+    width: 200px; 
+    height: auto;
+}
+
+header {
+    background-color: #fc0;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;  
+    padding: 0 20px;
+}
+
+
+main {
+    background-color: #004c35;
+    height: 500px;
+}
+
+footer {
+    background-color: #fc0;
+    height: 100px;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0; 
+    margin-left: 15px;
+    font-size: 24px;
+    color: #004c35;
+    font-family: Fellix, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
