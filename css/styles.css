@@ -7,14 +7,14 @@ header {
     background-color: #fc0;
     height: 80px;
     display: flex;
-    align-items: flex-end;  
     padding: 0 20px;
 }
 
 
 main {
     background-color: #004c35;
-    height: 500px;
+    height: auto;
+    margin-top: -20px;
 }
 
 footer {
@@ -26,9 +26,59 @@ h1 {
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 0; 
-    margin-left: 15px;
+    margin-left: 250px;
     font-size: 24px;
     color: #004c35;
     font-family: Fellix, Helvetica Neue, Helvetica, Arial, sans-serif;
+    
 }
 
+.RoosterBlok {
+    width: 450px; 
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    margin-top: 20px;
+
+}
+
+/* @media (max-width: 768px) {
+  
+    *{
+  font-size: medium;}
+
+  header, nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  main {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .vakken, .docenten {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vak, .docent {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  footer {
+    font-size: small;
+    padding: 10px;
+  }
+}
+
+ */
