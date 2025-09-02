@@ -17,8 +17,28 @@ header {
   gap: 20px;
 }
 
+.teacher-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  object-fit: cover;
+}
+
+.teacher-images img {
+  width: 22%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid #fc0;
+  display: block;
+  object-fit: cover;
+
+}
+
 .logo {
-  width: 180px;
+  width: 180px; 
   flex-shrink: 0;
 }
 
@@ -118,7 +138,7 @@ main {
 
 .location-images .info-image {
   width: 45%;
-  max-width: 400px;
+  max-width: auto;
 }
 
 .footer {
@@ -141,23 +161,39 @@ main {
     margin-bottom: 20px;
   }
 
-  @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+  }
+  .logo {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  .page-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
   .subject {
     width: 100%;
   }
-}   
 
   .location-images {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
   }
 
   .location-images .info-image {
-    width: 100%;
-    max-width: none;
-  }
-
-  .navigation {
-    justify-content: center;
+    width: 48%;
+    max-width: 180px;
+    margin: 0;
   }
 }
+
+
+
+
