@@ -8,11 +8,9 @@ body {
 header {
   background-color: #fc0;
   color: #004c35;
-  padding: 20px;
   position: sticky;
   top: 0;
   z-index: 999;
-  display: flex;
   align-items: center;
   gap: 20px;
 }
@@ -23,7 +21,6 @@ header {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 40px;
-  object-fit: cover;
 }
 
 .teacher-images img {
@@ -33,13 +30,22 @@ header {
   border-radius: 10px;
   border: 4px solid #fc0;
   display: block;
-  object-fit: cover;
 
+}
+
+.teacher-names {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 165px;
+  margin-top: -50px;
 }
 
 .logo {
   width: 180px; 
   flex-shrink: 0;
+  margin-top: 10px;
 }
 
 .page-title {
@@ -47,12 +53,16 @@ header {
   font-weight: bold;
   font-family: Fellix, Helvetica Neue, Helvetica, Arial, sans-serif;
   flex-grow: 1;
+  text-align: center;
+  margin-top: -60px;
+  margin-bottom: 20px;
 }
 
 .navigation {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .navigation a {
@@ -143,28 +153,23 @@ main {
 
 .footer {
   background-color: #fc0;
-  text-align: center;
-  padding: 30px;
-  font-weight: bold;
-  font-size: 14px;
   color: #004c35;
+  text-align: center;
+  padding: 24px 0 16px 0;
+  font-size: 15px;
+  border-top: 4px solid #004c35;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: #004c35;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
-  .block-images {
-    flex-direction: column;
-  }
-
-  .block-images img {
-    width: 100%;
-    max-width: none;
-    margin-bottom: 20px;
-  }
-
   header {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    align-items: center;
     padding: 15px;
   }
   .logo {
@@ -173,27 +178,55 @@ main {
   }
   .page-title {
     font-size: 18px;
+    margin-top: 0;
     margin-bottom: 10px;
+    text-align: center;
+  }
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .navigation a {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  .teacher-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .teacher-images img {
+    width: 80%;
+    max-width: 220px;
+    margin-bottom: 10px;
+  }
+  .teacher-names {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0;
+  }
+  .block-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .block-images img {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
   }
   .subject {
     width: 100%;
   }
-
   .location-images {
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
     gap: 10px;
+    align-items: flex-start;
   }
-
   .location-images .info-image {
     width: 48%;
     max-width: 180px;
     margin: 0;
   }
 }
-
-
-
-
