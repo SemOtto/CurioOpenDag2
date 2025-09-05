@@ -8,9 +8,6 @@ body {
 header {
   background-color: #fc0;
   color: #004c35;
-  position: sticky;
-  top: 0;
-  z-index: 999;
   align-items: center;
   gap: 20px;
 }
